@@ -21,11 +21,14 @@ $(document).ready(function ()
 });
 
 
-// Class representing a game of minesweep. jacob
+// Class representing a game of minesweep.
 function MineSweep(){
 
    //Player attached to the game.
-   var player = new Player();
+    var player = new Player();
+
+    // private field holding the current level; 
+    var level;
 
     // Method responsible for initalizing a new game session.
     this.InitGame = function () {};
@@ -47,6 +50,8 @@ function MineSweep(){
     }
 
 
+
+
 }
 
 // Class representing a player. 
@@ -63,5 +68,12 @@ function Player() {
     this.Clicks = function () { return clicks; };
 
     this.IncreaseClicks = function () { clicks++; };
+
+}
+
+//Class representing a level
+function Level()
+{
+
 
 }
