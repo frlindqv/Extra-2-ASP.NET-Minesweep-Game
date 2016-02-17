@@ -1,4 +1,5 @@
-﻿var mineSweep = new MineSweep();
+﻿//Global instance 
+var mineSweep = new MineSweep();
 
 
 $(document).ready(function ()
@@ -6,7 +7,6 @@ $(document).ready(function ()
     $('.carousel').carousel({
         interval: 7500
     });
-
 
     mineSweep.Player().SetName("Fredrik"); 
     mineSweep.Player().IncreaseClicks();
@@ -27,18 +27,21 @@ function MineSweep(){
    //Player attached to the game.
    var player = new Player();
 
-    // Method responsible for initalizing a new game round.
+    // Method responsible for initalizing a new game session.
     this.InitGame = function () {};
 
+    // Method responsible for running a  running the game.
     this.RunGame = function () { };
 
+    // Method resposible for ending a game session.
     this.EndGame = function () { };
 
-
+    // Get current player
     this.Player = function () {
         return player;
     }
 
+    // Set current player. 
     this.SetPlayer = function (newPlayer) {
         player = newPlayer;
     }
