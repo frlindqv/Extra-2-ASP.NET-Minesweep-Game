@@ -21,7 +21,7 @@ $(document).ready(function ()
 });
 
 
-// Class representing a game of minesweep.
+// Class representing a game of minesweep. jacob
 function MineSweep(){
 
    //Player attached to the game.
