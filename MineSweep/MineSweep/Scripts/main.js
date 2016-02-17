@@ -21,12 +21,14 @@ $(document).ready(function ()
 });
 
 
-
+// Class representing a game of minesweep.
 function MineSweep(){
 
+   //Player attached to the game.
    var player = new Player();
 
-   this.InitGame = function () {};
+    // Method responsible for initalizing a new game round.
+    this.InitGame = function () {};
 
     this.RunGame = function () { };
 
@@ -44,7 +46,7 @@ function MineSweep(){
 
 }
 
-
+// Class representing a player. 
 function Player() {
 
     var name;
